@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xitorque Sweets — Ghotki Ja Pera &amp; Multani Halwa House</title>
+<meta name="description" content="Xitorque Sweets — premium Ghotki Pera and Multani Sohan Halwa, made fresh daily under strict hygiene SOPs. Opening soon in Ghotki.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--ivory)" stroke="var(--gold-soft)" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M30 30 L70 70 M70 30 L30 70" stroke="var(--maroon)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9" fill="var(--turquoise)"/>
+      </svg>
+      <p class="brand-name">Xitorque Sweets</p>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#F6EEDD" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" data-en="Home" data-ur="ہوم" class="active">Home</a>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات">Products</a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں">Why Choose Us</a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں">Visit Us</a>
+      <a href="contact.html" data-en="Contact" data-ur="رابطہ">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-ur" onclick="setLang('ur')">اردو</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="ribbon" data-en="Opening Soon in Ghotki" data-ur="جلد گھوٹکی میں شروع ہو رہا ہے"></span>
+  <h1 data-en="Xitorque Sweets" data-ur="Xitorque Sweets"></h1>
+  <p class="tagline" data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+  <p class="lede" data-en="Traditional sweets, made the honest way — pure milk, pure ghee, and as much care for hygiene as for taste."
+     data-ur="روایتی مٹھائیاں، ایمانداری کے ساتھ تیار — خالص دودھ، خالص گھی، اور ذائقے جتنا ہی خیال صفائی کا۔"></p>
+  <div class="cta-row">
+    <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#fff" fill-opacity="0.15"/><path d="M17.47 14.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.18.27-.71.88-.87 1.06-.16.18-.32.2-.6.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.45-.46-.62-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.82-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z" fill="#fff"/></svg>
+      <span data-en="Order on WhatsApp" data-ur="واٹس ایپ پر آرڈر کریں"></span>
+    </a>
+    <a class="btn btn-outline" href="products.html">
+      <span data-en="See Our Sweets" data-ur="ہماری مٹھائیاں دیکھیں"></span>
+    </a>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<section id="explore">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-en="Explore" data-ur="مزید دیکھیں"></span>
+      <h2 data-en="Everything About Xitorque Sweets" data-ur="زیتورک سویٹس کے بارے میں سب کچھ"></h2>
+    </div>
+    <div class="quick-grid">
+
+      <a href="products.html" class="glass-card quick-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14" fill="var(--gold-soft)"/><circle cx="18" cy="18" r="8" fill="var(--gold)"/></svg>
+        <h3 data-en="Our Sweets" data-ur="ہماری مٹھائیاں"></h3>
+        <p data-en="Ghotki Pera &amp; Multani Sohan Halwa" data-ur="گھوٹکی پیرا اور ملتانی سوہن حلوہ"></p>
+        <span class="arrow" data-en="Explore →" data-ur="دیکھیں ←"></span>
+      </a>
+
+      <a href="why-choose-us.html" class="glass-card quick-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--turquoise)" stroke-width="3"/><path d="M15 25l6 6 12-14" stroke="var(--turquoise)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></h3>
+        <p data-en="Hygiene, quality &amp; fair prices" data-ur="صفائی، معیار اور مناسب قیمت"></p>
+        <span class="arrow" data-en="See Reasons →" data-ur="وجوہات دیکھیں ←"></span>
+      </a>
+
+      <a href="team.html" class="glass-card quick-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="18" r="7" fill="var(--maroon)"/><circle cx="31" cy="18" r="7" fill="var(--indigo)"/><path d="M6 38c0-7 5-11 11-11s11 4 11 11" stroke="var(--maroon)" stroke-width="3" fill="none"/><path d="M20 38c0-7 5-11 11-11s11 4 11 11" stroke="var(--indigo)" stroke-width="3" fill="none"/></svg>
+        <h3 data-en="Our Team" data-ur="ہماری ٹیم"></h3>
+        <p data-en="The people behind every batch" data-ur="ہر مٹھائی کے پیچھے موجود لوگ"></p>
+        <span class="arrow" data-en="Meet Them →" data-ur="ملیں ←"></span>
+      </a>
+
+      <a href="visit-us.html" class="glass-card quick-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c-8 0-14 6-14 14 0 10 14 26 14 26s14-16 14-26c0-8-6-14-14-14z" fill="var(--gold)"/><circle cx="24" cy="18" r="6" fill="var(--ivory)"/></svg>
+        <h3 data-en="Visit Us" data-ur="ہم سے ملیں"></h3>
+        <p data-en="Ghotki shop &amp; home delivery" data-ur="گھوٹکی کی دکان اور ہوم ڈیلیوری"></p>
+        <span class="arrow" data-en="Get Directions →" data-ur="تفصیل دیکھیں ←"></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Xitorque Sweets</h3>
+      <p data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+      <p>📞 0327 2899214</p>
+    </div>
+    <div class="footer-nav">
+      <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
+    </div>
+    <div>
+      <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
+      <div class="footer-social">
+        <span class="social-pill" data-en="Facebook — Coming Soon" data-ur="فیس بک — جلد آ رہا ہے"></span>
+        <span class="social-pill" data-en="Instagram — Coming Soon" data-ur="انسٹاگرام — جلد آ رہا ہے"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-en="© 2026 Xitorque Sweets. All rights reserved." data-ur="© 2026 Xitorque Sweets — جملہ حقوق محفوظ ہیں۔"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

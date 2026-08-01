@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Us — Xitorque Sweets</title>
+<meta name="description" content="Xitorque Sweets is opening soon in Ghotki, Sindh, with home delivery available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--ivory)" stroke="var(--gold-soft)" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M30 30 L70 70 M70 30 L30 70" stroke="var(--maroon)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9" fill="var(--turquoise)"/>
+      </svg>
+      <p class="brand-name">Xitorque Sweets</p>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#F6EEDD" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" data-en="Home" data-ur="ہوم">Home</a>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات">Products</a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں">Why Choose Us</a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں" class="active">Visit Us</a>
+      <a href="contact.html" data-en="Contact" data-ur="رابطہ">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-ur" onclick="setLang('ur')">اردو</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow" data-en="Visit Us" data-ur="ہم سے ملیں"></span>
+  <h1 data-en="Our First Shop — Ghotki, Sindh" data-ur="ہماری پہلی دکان — گھوٹکی، سندھ"></h1>
+  <p class="lede" data-en="A bakery-style shop with glass counters, plus home delivery for those who can't visit." data-ur="شیشے کے کاؤنٹرز والی بیکری اسٹائل دکان، اور جو نہ آ سکیں ان کے لیے ہوم ڈیلیوری۔"></p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="soon-grid">
+      <div class="glass-card soon-card">
+        <span class="soon-badge" data-en="Coming Soon" data-ur="جلد آ رہا ہے"></span>
+        <svg class="soon-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c-8 0-14 6-14 14 0 10 14 26 14 26s14-16 14-26c0-8-6-14-14-14z" fill="var(--gold)"/><circle cx="24" cy="18" r="6" fill="var(--ivory)"/></svg>
+        <h3 data-en="Location" data-ur="مقام"></h3>
+        <p data-en="Ghotki, Sindh — exact address coming soon." data-ur="گھوٹکی، سندھ — مکمل پتہ جلد بتایا جائے گا۔"></p>
+      </div>
+      <div class="glass-card soon-card">
+        <span class="soon-badge" data-en="Coming Soon" data-ur="جلد آ رہا ہے"></span>
+        <svg class="soon-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="30" rx="3" fill="none" stroke="var(--turquoise)" stroke-width="2.5"/><path d="M8 18h32" stroke="var(--turquoise)" stroke-width="2.5"/><path d="M16 6v8M32 6v8" stroke="var(--turquoise)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <h3 data-en="Opening Day" data-ur="افتتاح کی تاریخ"></h3>
+        <p data-en="Stay tuned — we'll announce the date here first." data-ur="ساتھ رہیں — تاریخ سب سے پہلے یہاں بتائی جائے گی۔"></p>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:50px;">
+      <span class="eyebrow" data-en="How To Get Our Sweets" data-ur="ہماری مٹھائیاں کیسے حاصل کریں"></span>
+      <h2 data-en="Two Easy Ways" data-ur="دو آسان طریقے"></h2>
+    </div>
+    <div class="icon-info-grid">
+      <div class="glass-card icon-info-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="20" width="28" height="18" rx="2" fill="none" stroke="var(--turquoise)" stroke-width="3"/><path d="M10 20l4-10h20l4 10" fill="none" stroke="var(--turquoise)" stroke-width="3" stroke-linejoin="round"/><rect x="20" y="28" width="8" height="10" fill="var(--gold)"/></svg>
+        <div>
+          <h3 data-en="Visit The Shop" data-ur="دکان پر تشریف لائیں"></h3>
+          <p data-en="Bakery-style counters, spotless kitchen behind the scenes, and staff following full hygiene SOPs." data-ur="بیکری اسٹائل کاؤنٹرز، پیچھے بےداغ کچن، اور مکمل حفظان صحت SOPs کی پابندی کرنے والا عملہ۔"></p>
+        </div>
+      </div>
+      <div class="glass-card icon-info-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="34" r="6" fill="none" stroke="var(--maroon)" stroke-width="3"/><circle cx="34" cy="34" r="6" fill="none" stroke="var(--maroon)" stroke-width="3"/><path d="M14 34l6-16h8l6 10h6" fill="none" stroke="var(--indigo)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <h3 data-en="Home Delivery" data-ur="ہوم ڈیلیوری"></h3>
+          <p data-en="Our own riders bring your order straight to your door, packed fresh and secure." data-ur="ہمارے اپنے رائیڈرز آپ کا آرڈر تازہ اور محفوظ پیکنگ کے ساتھ آپ کے گھر پہنچاتے ہیں۔"></p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
+        <span data-en="Ask About Delivery" data-ur="ڈیلیوری کے بارے میں پوچھیں"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Xitorque Sweets</h3>
+      <p data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+      <p>📞 0327 2899214</p>
+    </div>
+    <div class="footer-nav">
+      <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
+    </div>
+    <div>
+      <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
+      <div class="footer-social">
+        <span class="social-pill" data-en="Facebook — Coming Soon" data-ur="فیس بک — جلد آ رہا ہے"></span>
+        <span class="social-pill" data-en="Instagram — Coming Soon" data-ur="انسٹاگرام — جلد آ رہا ہے"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-en="© 2026 Xitorque Sweets. All rights reserved." data-ur="© 2026 Xitorque Sweets — جملہ حقوق محفوظ ہیں۔"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

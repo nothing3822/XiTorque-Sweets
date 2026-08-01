@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Xitorque Sweets</title>
+<meta name="description" content="Order or get in touch with Xitorque Sweets via WhatsApp or the contact form.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--ivory)" stroke="var(--gold-soft)" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M30 30 L70 70 M70 30 L30 70" stroke="var(--maroon)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9" fill="var(--turquoise)"/>
+      </svg>
+      <p class="brand-name">Xitorque Sweets</p>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#F6EEDD" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" data-en="Home" data-ur="ہوم">Home</a>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات">Products</a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں">Why Choose Us</a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں">Visit Us</a>
+      <a href="contact.html" data-en="Contact" data-ur="رابطہ" class="active">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-ur" onclick="setLang('ur')">اردو</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow" data-en="Get In Touch" data-ur="رابطہ کریں"></span>
+  <h1 data-en="Order Now or Ask Us Anything" data-ur="ابھی آرڈر کریں یا کچھ بھی پوچھیں"></h1>
+  <p class="lede" data-en="We reply fastest on WhatsApp." data-ur="واٹس ایپ پر ہم سب سے تیز جواب دیتے ہیں۔"></p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-wrap">
+
+      <div class="glass-card contact-card">
+        <h3 data-en="Message Us Directly" data-ur="براہ راست پیغام بھیجیں"></h3>
+        <p data-en="Fastest way to order or ask about our sweets." data-ur="آرڈر کرنے یا کچھ پوچھنے کا سب سے تیز طریقہ۔"></p>
+        <p class="contact-number">📞 0327 2899214</p>
+        <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#fff" fill-opacity="0.15"/><path d="M17.47 14.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.18.27-.71.88-.87 1.06-.16.18-.32.2-.6.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.45-.46-.62-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.82-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z" fill="#fff"/></svg>
+          <span data-en="Message us on WhatsApp" data-ur="واٹس ایپ پر پیغام بھیجیں"></span>
+        </a>
+        <p class="form-note" style="margin-top:16px;" data-en="Opening Soon in Ghotki — address and date coming here first." data-ur="گھوٹکی میں جلد آ رہے ہیں — پتہ اور تاریخ سب سے پہلے یہاں بتائی جائے گی۔"></p>
+      </div>
+
+      <div class="glass-card contact-card">
+        <h3 data-en="Or Send Us a Note" data-ur="یا ہمیں پیغام لکھیں"></h3>
+        <form id="contact-form">
+          <div>
+            <label for="f-name" data-en="Name" data-ur="نام"></label>
+            <input type="text" id="f-name" required>
+          </div>
+          <div>
+            <label for="f-phone" data-en="Phone Number" data-ur="فون نمبر"></label>
+            <input type="tel" id="f-phone" required>
+          </div>
+          <div>
+            <label for="f-msg" data-en="Message / Order Details" data-ur="پیغام / آرڈر کی تفصیل"></label>
+            <textarea id="f-msg" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp">
+            <span data-en="Send via WhatsApp" data-ur="واٹس ایپ کے ذریعے بھیجیں"></span>
+          </button>
+          <p class="form-note" data-en="Sending opens WhatsApp with your message ready to go — fastest way for us to reply."
+             data-ur="بھیجنے پر واٹس ایپ کھل جائے گا اور آپ کا پیغام تیار ہوگا — ہمارے جواب دینے کا سب سے تیز طریقہ۔"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Xitorque Sweets</h3>
+      <p data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+      <p>📞 0327 2899214</p>
+    </div>
+    <div class="footer-nav">
+      <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
+    </div>
+    <div>
+      <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
+      <div class="footer-social">
+        <span class="social-pill" data-en="Facebook — Coming Soon" data-ur="فیس بک — جلد آ رہا ہے"></span>
+        <span class="social-pill" data-en="Instagram — Coming Soon" data-ur="انسٹاگرام — جلد آ رہا ہے"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-en="© 2026 Xitorque Sweets. All rights reserved." data-ur="© 2026 Xitorque Sweets — جملہ حقوق محفوظ ہیں۔"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

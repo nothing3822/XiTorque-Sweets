@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Sweets — Xitorque Sweets</title>
+<meta name="description" content="Ghotki Pera and Multani Sohan Halwa from Xitorque Sweets — made fresh daily with pure milk, ghee and dry fruits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--ivory)" stroke="var(--gold-soft)" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M30 30 L70 70 M70 30 L30 70" stroke="var(--maroon)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9" fill="var(--turquoise)"/>
+      </svg>
+      <p class="brand-name">Xitorque Sweets</p>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#F6EEDD" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" data-en="Home" data-ur="ہوم">Home</a>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات" class="active">Products</a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں">Why Choose Us</a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں">Visit Us</a>
+      <a href="contact.html" data-en="Contact" data-ur="رابطہ">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-ur" onclick="setLang('ur')">اردو</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow" data-en="Our Sweets" data-ur="ہماری مٹھائیاں"></span>
+  <h1 data-en="Made From Two Cities, Made With One Standard" data-ur="دو شہروں سے، ایک ہی معیار کے ساتھ"></h1>
+  <p class="lede" data-en="Two legendary sweets, one promise — pure ingredients, honest recipes, and hygiene at every step."
+     data-ur="دو مشہور مٹھائیاں، ایک ہی وعدہ — خالص اجزاء، ایماندار ترکیب، اور ہر قدم پر صفائی۔"></p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="products-grid">
+
+      <div class="glass-card product-card">
+        <svg class="product-art large" viewBox="0 0 120 120" aria-hidden="true">
+          <ellipse cx="60" cy="95" rx="42" ry="8" fill="var(--indigo)" opacity="0.08"/>
+          <circle cx="60" cy="72" r="30" fill="var(--gold-soft)"/>
+          <circle cx="60" cy="72" r="30" fill="url(#peraShine)"/>
+          <circle cx="45" cy="46" r="20" fill="var(--gold-soft)"/>
+          <circle cx="45" cy="46" r="20" fill="url(#peraShine)"/>
+          <circle cx="75" cy="42" r="17" fill="var(--gold)"/>
+          <circle cx="45" cy="46" r="3" fill="var(--maroon)"/>
+          <defs>
+            <radialGradient id="peraShine" cx="35%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#fff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+        <h3 data-en="Ghotki Pera" data-ur="گھوٹکی پیرا"></h3>
+        <p data-en="Sindh's beloved milk sweet — milk, sugar and ghee slow-cooked to a soft, rich finish with a hint of cardamom. Made the way Ghotki has always made it."
+           data-ur="سندھ کی پسندیدہ دودھ کی مٹھائی — دودھ، چینی اور گھی کو آہستہ آنچ پر پکا کر الائچی کے ہلکے ذائقے کے ساتھ تیار۔ بالکل اسی طرح جیسے گھوٹکی میں ہمیشہ سے بنایا جاتا رہا ہے۔"></p>
+        <div class="ingredient-row">
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#EFE7D6"/></svg><span data-en="Pure Milk" data-ur="خالص دودھ"></span></span>
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="var(--gold)"/></svg><span data-en="Pure Ghee" data-ur="خالص گھی"></span></span>
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="var(--turquoise)"/></svg><span data-en="Cardamom" data-ur="الائچی"></span></span>
+        </div>
+        <span class="price-tag" data-en="Price on request" data-ur="قیمت پوچھنے پر بتائی جائے گی"></span>
+      </div>
+
+      <div class="glass-card product-card">
+        <svg class="product-art large" viewBox="0 0 120 120" aria-hidden="true">
+          <ellipse cx="60" cy="98" rx="42" ry="8" fill="var(--indigo)" opacity="0.08"/>
+          <rect x="30" y="40" width="60" height="60" rx="4" transform="rotate(45 60 70)" fill="var(--gold)"/>
+          <rect x="30" y="40" width="60" height="60" rx="4" transform="rotate(45 60 70)" fill="url(#halwaShine)"/>
+          <circle cx="46" cy="55" r="4" fill="var(--maroon)"/>
+          <circle cx="60" cy="45" r="3.5" fill="var(--indigo)"/>
+          <circle cx="74" cy="58" r="4" fill="var(--maroon)"/>
+          <circle cx="60" cy="70" r="3.5" fill="var(--indigo)"/>
+          <defs>
+            <radialGradient id="halwaShine" cx="30%" cy="25%" r="75%">
+              <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+        <h3 data-en="Multani Sohan Halwa" data-ur="ملتانی سوہن حلوہ"></h3>
+        <p data-en="The legendary sweet of Multan — caramelized to a chewy, golden finish and loaded with almonds, pistachios and cashews."
+           data-ur="ملتان کی مشہور مٹھائی — سنہری اور لذیذ حلوہ، بادام، پستے اور کاجو سے بھرپور۔"></p>
+        <div class="ingredient-row">
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="var(--maroon)"/></svg><span data-en="Almonds" data-ur="بادام"></span></span>
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#7FA84C"/></svg><span data-en="Pistachio" data-ur="پستہ"></span></span>
+          <span class="ingredient-pill"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="var(--indigo)"/></svg><span data-en="Cashew" data-ur="کاجو"></span></span>
+        </div>
+        <span class="price-tag" data-en="Price on request" data-ur="قیمت پوچھنے پر بتائی جائے گی"></span>
+      </div>
+
+    </div>
+    <p style="text-align:center;font-size:0.85rem;margin-top:26px;" data-en="Product photos coming soon — real pictures from our kitchen will replace these once we open."
+       data-ur="پروڈکٹ کی تصاویر جلد آ رہی ہیں — کھلنے کے بعد ہمارے کچن کی اصل تصاویر یہاں لگائی جائیں گی۔"></p>
+    <div style="text-align:center;margin-top:28px;">
+      <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
+        <span data-en="Order on WhatsApp" data-ur="واٹس ایپ پر آرڈر کریں"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Xitorque Sweets</h3>
+      <p data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+      <p>📞 0327 2899214</p>
+    </div>
+    <div class="footer-nav">
+      <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
+    </div>
+    <div>
+      <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
+      <div class="footer-social">
+        <span class="social-pill" data-en="Facebook — Coming Soon" data-ur="فیس بک — جلد آ رہا ہے"></span>
+        <span class="social-pill" data-en="Instagram — Coming Soon" data-ur="انسٹاگرام — جلد آ رہا ہے"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-en="© 2026 Xitorque Sweets. All rights reserved." data-ur="© 2026 Xitorque Sweets — جملہ حقوق محفوظ ہیں۔"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
