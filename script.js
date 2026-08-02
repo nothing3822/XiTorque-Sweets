@@ -31,4 +31,19 @@ document.addEventListener('DOMContentLoaded', function(){
       window.open('https://wa.me/923272899214?text=' + encodeURIComponent(text), '_blank');
     });
   }
+
+  const bookingForm = document.getElementById('booking-form');
+  if(bookingForm){
+    bookingForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('b-name').value;
+      const phone = document.getElementById('b-phone').value;
+      const order = document.getElementById('b-order').value;
+      const typeInput = document.querySelector('input[name="booking-type"]:checked');
+      const type = typeInput ? typeInput.value : '';
+      const text = 'Hello Xitorque Sweets, I would like to place an ADVANCE BOOKING.\nName: ' + name +
+        '\nPhone: ' + phone + '\nBooking Type: ' + type + '\nOrder Details: ' + order;
+      window.open('https://wa.me/923272899214?text=' + encodeURIComponent(text), '_blank');
+    });
+  }
 });
