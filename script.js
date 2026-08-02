@@ -20,6 +20,20 @@ function toggleNav(){
 document.addEventListener('DOMContentLoaded', function(){
   setLang('en');
 
+  if('IntersectionObserver' in window){
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15});
+    document.querySelectorAll('.reveal').forEach(function(el){ observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
+  }
+
   const form = document.getElementById('contact-form');
   if(form){
     form.addEventListener('submit', function(e){
