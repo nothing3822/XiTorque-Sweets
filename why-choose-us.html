@@ -4,51 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why Choose Us — Xitorque Sweets</title>
-<meta name="description" content="Cleanliness, fair pricing, premium ingredients, strict SOPs, spotless kitchen and fresh-daily sweets — why Xitorque Sweets stands apart.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-.why-item{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:0;
-  margin-bottom:0;
+.why-full-img{
+  width:100%;
+  max-height:600px;
+  object-fit:cover;
+  display:block;
 }
-@media(min-width:760px){
-  .why-item{grid-template-columns:1fr 1fr;}
-  .why-item.reverse .why-img-wrap{order:2;}
-  .why-item.reverse .why-text-wrap{order:1;}
+.why-text-block{
+  max-width:860px;
+  margin:0 auto;
+  padding:48px 28px;
+  text-align:center;
 }
-.why-img-wrap{
-  overflow:hidden;
-  max-height:480px;
+.why-text-block .num{
+  font-size:4rem;font-weight:700;
+  color:var(--gold-soft);opacity:0.3;
+  font-family:'Fraunces',serif;
+  line-height:1;margin-bottom:8px;
 }
-.why-img-wrap img{
-  width:100%;height:100%;
-  object-fit:cover;display:block;
-  transition:transform 0.5s ease;
+.why-text-block h3{
+  font-size:clamp(1.6rem,3.5vw,2.2rem);
+  margin-bottom:16px;
 }
-.why-img-wrap:hover img{transform:scale(1.03);}
-.why-text-wrap{
-  display:flex;flex-direction:column;justify-content:center;
-  padding:48px 40px;background:var(--card);
-}
-@media(max-width:760px){.why-text-wrap{padding:32px 24px;}}
-.why-text-wrap .num{
-  font-size:3.5rem;font-weight:700;line-height:1;
-  color:var(--gold-soft);opacity:0.35;
-  font-family:'Fraunces',serif;margin-bottom:10px;
-}
-.why-text-wrap h3{
-  font-size:clamp(1.4rem,3vw,2rem);margin-bottom:14px;
-}
-.why-text-wrap p{font-size:1rem;line-height:1.75;}
-.section-divider{
-  height:2px;
-  background:linear-gradient(to right, transparent, var(--gold-soft), transparent);
-  margin:0;
+.why-text-block p{
+  font-size:1.05rem;line-height:1.8;
+  max-width:680px;margin:0 auto;
+  color:var(--ink-soft);
 }
 </style>
 </head>
@@ -90,94 +76,64 @@
   <p class="lede" data-en="Every batch follows the same promise — clean, fair, high quality, and made right." data-ur="ہر مٹھائی ایک ہی وعدے کے ساتھ بنتی ہے — صاف، منصفانہ، اعلیٰ معیار، اور صحیح طریقے سے۔"></p>
 </section>
 
+<!-- 1 -->
 <div class="ajrak-divider"></div>
-
-<!-- 1. Cleanliness -->
-<div class="why-item reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-cleanliness.png" alt="Cleanliness at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">01</div>
-    <h3 data-en="Cleanliness, Always" data-ur="صفائی کا خاص خیال"></h3>
-    <p data-en="Every counter, surface and glass display is cleaned and checked daily without exception. Workers wear gloves, caps and masks at all times. Cleanliness is not a rule here — it is the foundation everything else is built on."
-       data-ur="ہر کاؤنٹر، سطح اور شیشے کا ڈسپلے روزانہ بغیر کسی استثناء کے صاف اور چیک کیا جاتا ہے۔ ورکرز ہر وقت دستانے، کیپ اور ماسک پہنتے ہیں۔ یہاں صفائی صرف اصول نہیں — یہ وہ بنیاد ہے جس پر باقی سب کچھ کھڑا ہے۔"></p>
-  </div>
+<img class="why-full-img reveal" src="photos/why-cleanliness.png" alt="Cleanliness at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">01</div>
+  <h3 data-en="Cleanliness, Always" data-ur="صفائی کا خاص خیال"></h3>
+  <p data-en="Every counter, surface and glass display is cleaned and checked daily without exception. Workers wear gloves, caps and masks at all times. Cleanliness is not a rule here — it is the foundation everything else is built on."
+     data-ur="ہر کاؤنٹر، سطح اور شیشے کا ڈسپلے روزانہ بغیر کسی استثناء کے صاف اور چیک کیا جاتا ہے۔ ورکرز ہر وقت دستانے، کیپ اور ماسک پہنتے ہیں۔ یہاں صفائی صرف اصول نہیں — یہ وہ بنیاد ہے جس پر باقی سب کچھ کھڑا ہے۔"></p>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- 2. Pricing -->
-<div class="why-item reverse reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-pricing.png" alt="Fair pricing at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">02</div>
-    <h3 data-en="Fair, Market-Matched Pricing" data-ur="مناسب مارکیٹ قیمت"></h3>
-    <p data-en="Premium quality does not have to mean overpriced. We keep our prices honest and in line with the market — no hidden charges, no shortcuts taken to save cost, no compromise on what goes inside."
-       data-ur="اعلیٰ معیار کا مطلب مہنگی قیمت نہیں ہوتا۔ ہم اپنی قیمتیں ایماندارانہ اور مارکیٹ کے مطابق رکھتے ہیں — کوئی پوشیدہ چارجز نہیں، لاگت بچانے کے لیے کوئی سمجھوتہ نہیں، اجزاء میں کوئی کمی نہیں۔"></p>
-  </div>
+<!-- 2 -->
+<div class="ajrak-divider"></div>
+<img class="why-full-img reveal" src="photos/why-pricing.png" alt="Fair Pricing at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">02</div>
+  <h3 data-en="Fair, Market-Matched Pricing" data-ur="مناسب مارکیٹ قیمت"></h3>
+  <p data-en="Premium quality does not have to mean overpriced. We keep our prices honest and in line with the market — no hidden charges, no shortcuts taken to save cost, no compromise on what goes inside."
+     data-ur="اعلیٰ معیار کا مطلب مہنگی قیمت نہیں ہوتا۔ ہم اپنی قیمتیں ایماندارانہ اور مارکیٹ کے مطابق رکھتے ہیں — کوئی پوشیدہ چارجز نہیں، لاگت بچانے کے لیے کوئی سمجھوتہ نہیں۔"></p>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- 3. Ingredients -->
-<div class="why-item reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-ingredients.png" alt="Premium ingredients at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">03</div>
-    <h3 data-en="Premium Quality Ingredients" data-ur="اعلیٰ معیار کے اجزاء"></h3>
-    <p data-en="Only pure milk, pure desi ghee, fresh dry fruits and the finest spices go into our sweets. Every ingredient is hand-picked for quality. What you eat is exactly what we promised — nothing more, nothing less."
-       data-ur="صرف خالص دودھ، خالص دیسی گھی، تازہ خشک میوہ جات اور بہترین مصالحے ہماری مٹھائیوں میں جاتے ہیں۔ ہر جزو کو معیار کے لیے ہاتھ سے چنا جاتا ہے۔ آپ جو کھاتے ہیں وہی ہے جس کا ہم نے وعدہ کیا — نہ کم، نہ زیادہ۔"></p>
-  </div>
+<!-- 3 -->
+<div class="ajrak-divider"></div>
+<img class="why-full-img reveal" src="photos/why-ingredients.png" alt="Premium Ingredients at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">03</div>
+  <h3 data-en="Premium Quality Ingredients" data-ur="اعلیٰ معیار کے اجزاء"></h3>
+  <p data-en="Only pure milk, pure desi ghee, fresh dry fruits and the finest spices go into our sweets. Every ingredient is carefully selected for quality. What you eat is exactly what we promised — nothing more, nothing less."
+     data-ur="صرف خالص دودھ، خالص دیسی گھی، تازہ خشک میوہ جات اور بہترین مصالحے ہماری مٹھائیوں میں جاتے ہیں۔ ہر جزو کو معیار کے لیے احتیاط سے چنا جاتا ہے۔ آپ جو کھاتے ہیں وہی ہے جس کا ہم نے وعدہ کیا۔"></p>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- 4. SOPs -->
-<div class="why-item reverse reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-sops.png" alt="Strict SOPs at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">04</div>
-    <h3 data-en="Strict SOPs, Every Day" data-ur="ہر وقت سخت SOPs"></h3>
-    <p data-en="Surgical caps, face masks, gloves and standard operating procedures are followed by every single worker, on every single day — no exceptions, no shortcuts. Your health is our responsibility and we treat it that way."
-       data-ur="سرجیکل کیپ، فیس ماسک، دستانے اور معیاری آپریٹنگ طریقہ کار ہر ورکر ہر روز پابندی سے اپناتا ہے — کوئی استثناء نہیں، کوئی کمی نہیں۔ آپ کی صحت ہماری ذمہ داری ہے اور ہم اسے اسی طرح سمجھتے ہیں۔"></p>
-  </div>
+<!-- 4 -->
+<div class="ajrak-divider"></div>
+<img class="why-full-img reveal" src="photos/why-sops.png" alt="Strict SOPs at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">04</div>
+  <h3 data-en="Strict SOPs, Every Day" data-ur="ہر وقت سخت SOPs"></h3>
+  <p data-en="Surgical caps, face masks, gloves and standard operating procedures are followed by every single worker, on every single day — no exceptions, no shortcuts. Your health is our responsibility and we treat it that way."
+     data-ur="سرجیکل کیپ، فیس ماسک، دستانے اور معیاری آپریٹنگ طریقہ کار ہر ورکر ہر روز پابندی سے اپناتا ہے — کوئی استثناء نہیں، کوئی کمی نہیں۔ آپ کی صحت ہماری ذمہ داری ہے۔"></p>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- 5. Kitchen -->
-<div class="why-item reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-kitchen.png" alt="Spotless kitchen at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">05</div>
-    <h3 data-en="A Spotless Kitchen" data-ur="بےداغ کچن"></h3>
-    <p data-en="Where the sweet is made matters just as much as where it is sold. Our kitchen is maintained to the same standard as our shop floor — clean counters, hygienic equipment, and workers who take pride in keeping it that way."
-       data-ur="جہاں مٹھائی بنتی ہے اس کی اہمیت اتنی ہی ہے جتنی جہاں فروخت ہوتی ہے۔ ہمارا کچن اسی معیار پر برقرار رکھا جاتا ہے جیسے ہماری دکان — صاف کاؤنٹرز، صحت مند آلات، اور ایسے ورکرز جو اسے اسی طرح رکھنے پر فخر کرتے ہیں۔"></p>
-  </div>
+<!-- 5 -->
+<div class="ajrak-divider"></div>
+<img class="why-full-img reveal" src="photos/why-kitchen.png" alt="Spotless Kitchen at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">05</div>
+  <h3 data-en="A Spotless Kitchen" data-ur="بےداغ کچن"></h3>
+  <p data-en="Where the sweet is made matters just as much as where it is sold. Our kitchen is maintained to the same standard as our shop floor — clean counters, hygienic equipment, and workers who take pride in keeping it that way."
+     data-ur="جہاں مٹھائی بنتی ہے اس کی اہمیت اتنی ہی ہے جتنی جہاں فروخت ہوتی ہے۔ ہمارا کچن اسی معیار پر برقرار رکھا جاتا ہے جیسے ہماری دکان — صاف کاؤنٹرز، صحت مند آلات۔"></p>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- 6. Fresh Daily -->
-<div class="why-item reverse reveal">
-  <div class="why-img-wrap">
-    <img src="photos/why-fresh.png" alt="Fresh daily at Xitorque Sweets">
-  </div>
-  <div class="why-text-wrap">
-    <div class="num">06</div>
-    <h3 data-en="Fresh, Made Daily" data-ur="روزانہ تازہ تیاری"></h3>
-    <p data-en="No old stock. No overnight storage. What you buy today was made today — period. We prepare fresh batches every morning so that every customer gets the best version of our sweets, not yesterday's leftovers."
-       data-ur="کوئی پرانا اسٹاک نہیں۔ رات کا ذخیرہ نہیں۔ آج جو آپ خریدیں گے وہ آج ہی بنایا گیا ہے — بس۔ ہم ہر صبح تازہ بیچ تیار کرتے ہیں تاکہ ہر کسٹمر کو ہماری مٹھائی کا بہترین ورژن ملے، کل کا بچا ہوا نہیں۔"></p>
-  </div>
+<!-- 6 -->
+<div class="ajrak-divider"></div>
+<img class="why-full-img reveal" src="photos/why-fresh.png" alt="Fresh Made Daily at Xitorque Sweets">
+<div class="why-text-block reveal">
+  <div class="num">06</div>
+  <h3 data-en="Fresh, Made Daily" data-ur="روزانہ تازہ تیاری"></h3>
+  <p data-en="No old stock. No overnight storage. What you buy today was made today — period. We prepare fresh batches every morning so every customer gets the best version of our sweets."
+     data-ur="کوئی پرانا اسٹاک نہیں۔ رات کا ذخیرہ نہیں۔ آج جو آپ خریدیں گے وہ آج ہی بنایا گیا ہے — بس۔ ہم ہر صبح تازہ بیچ تیار کرتے ہیں۔"></p>
 </div>
 
 <div class="ajrak-divider"></div>
@@ -186,7 +142,6 @@
   <h2 data-en="Ready to taste the difference?" data-ur="کیا آپ فرق چکھنے کے لیے تیار ہیں؟"></h2>
   <p style="max-width:500px;margin:10px auto 24px;" data-en="Order now on WhatsApp — fresh sweets delivered to your door or ready for pickup." data-ur="ابھی واٹس ایپ پر آرڈر کریں — تازہ مٹھائیاں آپ کے دروازے پر یا پک اپ کے لیے تیار۔"></p>
   <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#fff" fill-opacity="0.15"/><path d="M17.47 14.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.18.27-.71.88-.87 1.06-.16.18-.32.2-.6.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.45-.46-.62-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.82-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z" fill="#fff"/></svg>
     <span data-en="Order on WhatsApp" data-ur="واٹس ایپ پر آرڈر کریں"></span>
   </a>
 </section>
@@ -202,7 +157,7 @@
       <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
       <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
       <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
-      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
       <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
       <a href="advance-booking.html" data-en="Advance Booking" data-ur="ایڈوانس بکنگ"></a>
     </div>
