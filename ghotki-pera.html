@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghotki Pera — Xitorque Sweets</title>
+<meta name="description" content="The legendary Ghotki Pera — Sindh's most beloved milk sweet, made fresh daily with pure milk, ghee and cardamom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.product-hero-img{
+  width:100%;max-height:560px;object-fit:cover;display:block;
+}
+.product-hero-wrap{position:relative;}
+.product-hero-wrap .overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(15,7,9,0.72) 0%, transparent 55%);
+}
+.product-hero-wrap .hero-title{
+  position:absolute;bottom:32px;left:0;right:0;text-align:center;
+}
+.product-hero-wrap .hero-title h1{
+  color:#fff;font-size:clamp(2rem,5vw,3.2rem);margin:0 0 6px;
+  text-shadow:0 3px 12px rgba(0,0,0,0.8);
+}
+.product-hero-wrap .hero-title p{
+  color:var(--gold-soft);font-size:1.1rem;font-weight:600;
+  margin:0;text-shadow:0 2px 6px rgba(0,0,0,0.7);
+}
+.ingredient-card{
+  text-align:center;padding:0;overflow:hidden;
+}
+.ingredient-card img{
+  width:100%;aspect-ratio:1/1;object-fit:cover;
+  transition:transform 0.3s ease;
+}
+.ingredient-card:hover img{transform:scale(1.04);}
+.ingredient-card .ing-label{
+  padding:14px 12px 18px;background:var(--card);
+}
+.ingredient-card .ing-label h4{
+  font-size:1rem;margin:0 0 4px;color:var(--indigo-deep);
+}
+.ingredient-card .ing-label p{
+  font-size:0.83rem;margin:0;color:var(--ink-soft);
+}
+.ingredients-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+@media(max-width:600px){.ingredients-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--ivory)" stroke="var(--gold-soft)" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="var(--gold-soft)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M30 30 L70 70 M70 30 L30 70" stroke="var(--maroon)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9" fill="var(--turquoise)"/>
+      </svg>
+      <p class="brand-name">Xitorque Sweets</p>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#F6EEDD" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" data-en="Home" data-ur="ہوم">Home</a>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات" class="active">Products</a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں">Why Choose Us</a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم">Team</a>
+      <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں">Visit Us</a>
+      <a href="advance-booking.html" data-en="Advance Booking" data-ur="ایڈوانس بکنگ">Advance Booking</a>
+      <a href="contact.html" data-en="Contact" data-ur="رابطہ">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-ur" onclick="setLang('ur')">اردو</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Full bleed hero image -->
+<div class="product-hero-wrap">
+  <img class="product-hero-img" src="photos/ghotki-pera.png" alt="Ghotki Pera — Famous Sindhi sweet">
+  <div class="overlay"></div>
+  <div class="hero-title">
+    <h1 data-en="Famous Ghotki Pera" data-ur="مشہور گھوٹکی پیرا"></h1>
+    <p data-en="The legendary milk sweet of Sindh" data-ur="سندھ کی مشہور دودھ کی مٹھائی"></p>
+  </div>
+</div>
+
+<div class="ajrak-divider"></div>
+
+<section class="reveal">
+  <div class="container" style="max-width:760px;">
+    <div class="section-head">
+      <span class="eyebrow" data-en="About This Sweet" data-ur="اس مٹھائی کے بارے میں"></span>
+      <h2 data-en="Sindh's Most Beloved Sweet" data-ur="سندھ کی سب سے پسندیدہ مٹھائی"></h2>
+    </div>
+    <div class="glass-card" style="padding:28px 26px;">
+      <p data-en="Ghotki Pera is the most iconic sweet of Sindh, named after the city of Ghotki where it has been made for generations. It is prepared by slow-cooking pure fresh milk until it thickens into a rich, dense khoya, then combined with sugar, pure desi ghee and a touch of green cardamom for natural fragrance. The result is a soft, melt-in-the-mouth sweet with a light caramelized milk flavor that is impossible to forget."
+         data-ur="گھوٹکی پیرا سندھ کی سب سے مشہور مٹھائی ہے، جس کا نام گھوٹکی شہر سے لیا گیا ہے جہاں یہ نسلوں سے بنائی جا رہی ہے۔ اسے تازہ خالص دودھ کو آہستہ آنچ پر پکا کر گاڑھا کیا جاتا ہے، پھر چینی، خالص دیسی گھی اور ہری الائچی کا ہلکا ذائقہ ملایا جاتا ہے۔ نتیجہ ایک نرم، منہ میں گھل جانے والی مٹھائی ہے جس کا دودھ کا ہلکا کیرملائزڈ ذائقہ کبھی بھلایا نہیں جا سکتا۔"></p>
+      <p data-en="At Xitorque Sweets, we make our Ghotki Pera fresh every single day — no preservatives, no shortcuts, no old stock. Every piece you eat was made the same day."
+         data-ur="زیتورک سویٹس میں ہم گھوٹکی پیرا ہر روز تازہ بناتے ہیں — کوئی پریزرویٹیو نہیں، کوئی کمی نہیں، کوئی پرانا اسٹاک نہیں۔ آپ جو بھی پیرا کھائیں گے وہ اسی دن بنایا گیا ہوگا۔"></p>
+      <div style="text-align:center;margin-top:18px;">
+        <a class="btn btn-whatsapp" href="https://wa.me/923272899214?text=Hello%20Xitorque%20Sweets%2C%20I%20want%20to%20order%20Ghotki%20Pera." target="_blank" rel="noopener">
+          <span data-en="Order Ghotki Pera" data-ur="گھوٹکی پیرا آرڈر کریں"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<section class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-en="What Goes Inside" data-ur="اندر کیا ہے"></span>
+      <h2 data-en="Ingredients" data-ur="اجزاء"></h2>
+    </div>
+    <div class="ingredients-grid">
+
+      <div class="glass-card ingredient-card">
+        <img src="photos/milk.png" alt="Pure Milk">
+        <div class="ing-label">
+          <h4 data-en="Pure Milk" data-ur="خالص دودھ"></h4>
+          <p data-en="Fresh, farm-sourced milk slow-cooked to a rich khoya." data-ur="تازہ دودھ، آہستہ آنچ پر گاڑھا کیا گیا۔"></p>
+        </div>
+      </div>
+
+      <div class="glass-card ingredient-card">
+        <img src="photos/ghee.png" alt="Pure Ghee">
+        <div class="ing-label">
+          <h4 data-en="Pure Desi Ghee" data-ur="خالص دیسی گھی"></h4>
+          <p data-en="Real desi ghee for that unmistakable aroma and richness." data-ur="اصل دیسی گھی — لاجواب خوشبو اور مٹھاس کے لیے۔"></p>
+        </div>
+      </div>
+
+      <div class="glass-card ingredient-card">
+        <img src="photos/cardamom.png" alt="Cardamom">
+        <div class="ing-label">
+          <h4 data-en="Green Cardamom" data-ur="ہری الائچی"></h4>
+          <p data-en="A subtle, natural fragrance that lifts the whole sweet." data-ur="ہلکی قدرتی خوشبو جو پوری مٹھائی کو نکھار دیتی ہے۔"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="ajrak-divider"></div>
+
+<section style="padding:40px 24px;text-align:center;">
+  <a href="products.html" class="btn btn-outline" data-en="← Back to Our Sweets" data-ur="← واپس مٹھائیوں پر">← Back to Our Sweets</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Xitorque Sweets</h3>
+      <p data-en="Ghotki Ja Pera &amp; Multani Halwa House" data-ur="گھوٹکی جا پیرا اور ملتانی حلوہ ہاؤس"></p>
+      <p>📞 0327 2899214</p>
+    </div>
+    <div class="footer-nav">
+      <h3 data-en="Explore" data-ur="مزید دیکھیں"></h3>
+      <a href="products.html" data-en="Products" data-ur="مصنوعات"></a>
+      <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
+      <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
+      <a href="advance-booking.html" data-en="Advance Booking" data-ur="ایڈوانس بکنگ"></a>
+    </div>
+    <div>
+      <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
+      <div class="footer-social">
+        <span class="social-pill" data-en="Facebook — Coming Soon" data-ur="فیس بک — جلد آ رہا ہے"></span>
+        <span class="social-pill" data-en="Instagram — Coming Soon" data-ur="انسٹاگرام — جلد آ رہا ہے"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-en="© 2026 Xitorque Sweets. All rights reserved." data-ur="© 2026 Xitorque Sweets — جملہ حقوق محفوظ ہیں۔"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

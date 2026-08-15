@@ -9,6 +9,40 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+.products-showcase{max-width:860px;margin:0 auto;}
+.product-showcase-item{
+  display:block;text-decoration:none;color:inherit;
+  position:relative;overflow:hidden;border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-soft);cursor:pointer;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-showcase-item:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(30,58,95,0.18);}
+.product-showcase-item img{
+  width:100%;display:block;
+  aspect-ratio:1/1;object-fit:cover;
+}
+.product-showcase-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top, rgba(15,7,9,0.88) 0%, rgba(15,7,9,0.0) 100%);
+  padding:40px 28px 22px;
+  text-align:center;
+}
+.product-showcase-label h2{
+  color:#fff;font-size:clamp(1.5rem,4vw,2.2rem);
+  margin:0 0 4px;text-shadow:0 2px 8px rgba(0,0,0,0.7);
+}
+.product-showcase-label p{
+  color:var(--gold-soft);font-size:0.95rem;font-weight:600;
+  margin:0;text-shadow:0 1px 4px rgba(0,0,0,0.7);
+}
+.product-showcase-label .click-hint{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:12px;background:rgba(193,144,15,0.25);
+  border:1px solid var(--gold-soft);color:var(--gold-soft);
+  padding:7px 18px;border-radius:999px;font-size:0.82rem;font-weight:700;
+}
+</style>
 </head>
 <body>
 
@@ -50,101 +84,28 @@
 </section>
 
 <section>
-  <div class="container">
+  <div class="container products-showcase">
 
-    <div class="feature-row reveal">
-      <div class="feature-media">
-        <div class="feature-media-frame">
-          <svg viewBox="0 0 120 120" aria-hidden="true">
-            <ellipse cx="60" cy="95" rx="42" ry="8" fill="var(--indigo)" opacity="0.08"/>
-            <circle cx="60" cy="72" r="30" fill="var(--gold-soft)"/>
-            <circle cx="60" cy="72" r="30" fill="url(#peraShine)"/>
-            <circle cx="45" cy="46" r="20" fill="var(--gold-soft)"/>
-            <circle cx="45" cy="46" r="20" fill="url(#peraShine)"/>
-            <circle cx="75" cy="42" r="17" fill="var(--gold)"/>
-            <circle cx="45" cy="46" r="3" fill="var(--maroon)"/>
-            <defs>
-              <radialGradient id="peraShine" cx="35%" cy="30%" r="70%">
-                <stop offset="0%" stop-color="#fff" stop-opacity="0.55"/>
-                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
+    <a href="ghotki-pera.html" class="product-showcase-item reveal" style="margin-bottom:0;">
+      <img src="photos/ghotki-pera.png" alt="Ghotki Pera — Famous Sindhi sweet from Ghotki">
+      <div class="product-showcase-label">
+        <h2 data-en="Famous Ghotki Pera" data-ur="مشہور گھوٹکی پیرا"></h2>
+        <p data-en="The legendary milk sweet of Sindh" data-ur="سندھ کی مشہور دودھ کی مٹھائی"></p>
+        <span class="click-hint" data-en="View Details →" data-ur="تفصیل دیکھیں ←"></span>
       </div>
-      <div class="feature-text">
-        <span class="eyebrow" data-en="Sweet No. 1" data-ur="مٹھائی نمبر 1"></span>
-        <h3 data-en="Ghotki Pera" data-ur="گھوٹکی پیرا"></h3>
-        <p data-en="Sindh's beloved milk sweet — milk, sugar and ghee slow-cooked to a soft, rich finish with a hint of cardamom. Made the way Ghotki has always made it."
-           data-ur="سندھ کی پسندیدہ دودھ کی مٹھائی — دودھ، چینی اور گھی کو آہستہ آنچ پر پکا کر الائچی کے ہلکے ذائقے کے ساتھ تیار۔ بالکل اسی طرح جیسے گھوٹکی میں ہمیشہ سے بنایا جاتا رہا ہے۔"></p>
-        <div class="feature-ingredients">
-          <span class="feature-ingredient">
-            <span class="dot" style="background:#EFE7D6;border:1px solid rgba(30,58,95,0.2);"></span>
-            <span><strong data-en="Pure Milk" data-ur="خالص دودھ"></strong><span data-en="Slow-boiled fresh milk" data-ur="آہستہ آنچ پر پکا تازہ دودھ"></span></span>
-          </span>
-          <span class="feature-ingredient">
-            <span class="dot" style="background:var(--gold);"></span>
-            <span><strong data-en="Pure Ghee" data-ur="خالص گھی"></strong><span data-en="Real desi ghee aroma" data-ur="اصل دیسی گھی کی خوشبو"></span></span>
-          </span>
-          <span class="feature-ingredient">
-            <span class="dot" style="background:var(--turquoise);"></span>
-            <span><strong data-en="Cardamom" data-ur="الائچی"></strong><span data-en="Light natural fragrance" data-ur="ہلکی قدرتی خوشبو"></span></span>
-          </span>
-        </div>
-        <span class="price-tag" data-en="Price on request" data-ur="قیمت پوچھنے پر بتائی جائے گی"></span>
-      </div>
-    </div>
+    </a>
 
-    <div class="feature-row reverse reveal">
-      <div class="feature-media">
-        <div class="feature-media-frame">
-          <svg viewBox="0 0 120 120" aria-hidden="true">
-            <ellipse cx="60" cy="98" rx="42" ry="8" fill="var(--indigo)" opacity="0.08"/>
-            <rect x="30" y="40" width="60" height="60" rx="4" transform="rotate(45 60 70)" fill="var(--gold)"/>
-            <rect x="30" y="40" width="60" height="60" rx="4" transform="rotate(45 60 70)" fill="url(#halwaShine)"/>
-            <circle cx="46" cy="55" r="4" fill="var(--maroon)"/>
-            <circle cx="60" cy="45" r="3.5" fill="var(--indigo)"/>
-            <circle cx="74" cy="58" r="4" fill="var(--maroon)"/>
-            <circle cx="60" cy="70" r="3.5" fill="var(--indigo)"/>
-            <defs>
-              <radialGradient id="halwaShine" cx="30%" cy="25%" r="75%">
-                <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <div class="feature-text">
-        <span class="eyebrow" data-en="Sweet No. 2" data-ur="مٹھائی نمبر 2"></span>
-        <h3 data-en="Multani Sohan Halwa" data-ur="ملتانی سوہن حلوہ"></h3>
-        <p data-en="The legendary sweet of Multan — caramelized to a chewy, golden finish and loaded with almonds, pistachios and cashews."
-           data-ur="ملتان کی مشہور مٹھائی — سنہری اور لذیذ حلوہ، بادام، پستے اور کاجو سے بھرپور۔"></p>
-        <div class="feature-ingredients">
-          <span class="feature-ingredient">
-            <span class="dot" style="background:var(--maroon);"></span>
-            <span><strong data-en="Almonds" data-ur="بادام"></strong><span data-en="Whole almonds for crunch" data-ur="کرنچ کے لیے پورے بادام"></span></span>
-          </span>
-          <span class="feature-ingredient">
-            <span class="dot" style="background:#7FA84C;"></span>
-            <span><strong data-en="Pistachio" data-ur="پستہ"></strong><span data-en="Fresh, premium color & flavor" data-ur="تازہ، بہترین رنگ اور ذائقہ"></span></span>
-          </span>
-          <span class="feature-ingredient">
-            <span class="dot" style="background:var(--indigo);"></span>
-            <span><strong data-en="Cashew" data-ur="کاجو"></strong><span data-en="Roasted for extra creaminess" data-ur="اضافی کریمی پن کے لیے بھنا ہوا"></span></span>
-          </span>
-        </div>
-        <span class="price-tag" data-en="Price on request" data-ur="قیمت پوچھنے پر بتائی جائے گی"></span>
-      </div>
-    </div>
+    <div class="ajrak-divider" style="margin:0;"></div>
 
-    <p style="text-align:center;font-size:0.85rem;margin-top:16px;" data-en="Product photos coming soon — real pictures from our kitchen will replace these once we open."
-       data-ur="پروڈکٹ کی تصاویر جلد آ رہی ہیں — کھلنے کے بعد ہمارے کچن کی اصل تصاویر یہاں لگائی جائیں گی۔"></p>
-    <div style="text-align:center;margin-top:28px;">
-      <a class="btn btn-whatsapp" href="https://wa.me/923272899214" target="_blank" rel="noopener">
-        <span data-en="Order on WhatsApp" data-ur="واٹس ایپ پر آرڈر کریں"></span>
-      </a>
-    </div>
+    <a href="multani-halwa.html" class="product-showcase-item reveal">
+      <img src="photos/multani-sohan-halwa.png" alt="Multani Sohan Halwa — Famous sweet from Multan">
+      <div class="product-showcase-label">
+        <h2 data-en="The Multan Famous Sohan Halwa" data-ur="ملتان کا مشہور سوہن حلوہ"></h2>
+        <p data-en="A legendary taste since generations" data-ur="نسلوں سے مشہور ذائقہ"></p>
+        <span class="click-hint" data-en="View Details →" data-ur="تفصیل دیکھیں ←"></span>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -163,7 +124,7 @@
       <a href="why-choose-us.html" data-en="Why Choose Us" data-ur="ہمیں کیوں چنیں"></a>
       <a href="team.html" data-en="Team" data-ur="ٹیم"></a>
       <a href="visit-us.html" data-en="Visit Us" data-ur="ہم سے ملیں"></a>
-    <a href="advance-booking.html" data-en="Advance Booking" data-ur="ایڈوانس بکنگ"></a>
+      <a href="advance-booking.html" data-en="Advance Booking" data-ur="ایڈوانس بکنگ"></a>
     </div>
     <div>
       <h3 data-en="Follow Us" data-ur="ہمیں فالو کریں"></h3>
